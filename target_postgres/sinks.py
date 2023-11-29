@@ -18,6 +18,8 @@ class PostgresSink(SQLSink):
 
     connector_class = PostgresConnector
 
+    MAX_SIZE_DEFAULT = 1000
+
     def __init__(self, *args, **kwargs):
         """Initialize SQL Sink. See super class for more details."""
         super().__init__(*args, **kwargs)
